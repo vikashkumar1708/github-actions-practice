@@ -12,3 +12,15 @@ jobs:
 
        - name: greeting hello
          run: echo "hello from github actions!"
+
+       - name: date and time
+         run: date
+       
+       - name: triggering branch name
+         run: echo " this is the name of the branch that triggered the run ${{ github.ref_name }}"
+       
+       - name: list of files in this repo
+         run: ls -a
+
+       - name: runner's operating system
+         run: uname -a
