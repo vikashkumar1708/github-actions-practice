@@ -4,8 +4,8 @@ on:
     inputs:
         environment:
             description: "choose env"
-            required: "true"
             default: "staging"
+            required: true
             type: choice
             options:
                 - staging
