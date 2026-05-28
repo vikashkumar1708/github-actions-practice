@@ -24,3 +24,6 @@ jobs:
 
        - name: runner's operating system
          run: uname -a
+
+       - name: creating a pipeline with failed command
+         run: echo vikash
