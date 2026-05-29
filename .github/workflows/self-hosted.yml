@@ -1,7 +1,6 @@
 name: self-hosted runner with label
 on:
-    push:
-        branches: [main]
+    workflow_dispatch:
 jobs:
     self-hosted:
         runs-on: [ self-hosted, my-linux-runner]
