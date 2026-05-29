@@ -1,0 +1,20 @@
+name: self hosted runner
+on:
+    push:
+        branches: [main]
+jobs:
+    self-hosted:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: print hostname
+            run: hostname
+
+          - name: present working directory
+            run: pwd
+
+          - name: creating a file
+            run: |
+              echo "this is self osted runner file" > runner.txt
+          - name: verifying if file exixts or not
+            run: ls -a
