@@ -1,10 +1,10 @@
-name: self hosted runner
+name: self-hosted runner with label
 on:
     push:
         branches: [main]
 jobs:
     self-hosted:
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
 
         steps:
           - name: print hostname
