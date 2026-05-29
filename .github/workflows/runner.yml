@@ -18,3 +18,11 @@ jobs:
        - name: current user running the job
          run: | 
           echo " current user running the job : ${{github.actor}}"
+
+       - name: runn specific command in ubuntu
+         if: matrix.os == 'ubuntu-latest'
+         run: |
+           docker --version
+           python --version
+           node --version
+           git --version
