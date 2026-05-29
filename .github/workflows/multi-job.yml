@@ -1,0 +1,24 @@
+name: multi-job-yml
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:  
+        - name: building
+          run: echo "Building the app"
+ 
+
+    test:
+        runs-on: ubuntu-latest
+        steps:  
+        - name: running
+          run: echo "Running tests"
+
+
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Deploying
+          run: echo "Deploying"
