@@ -17,4 +17,5 @@ jobs:
                 echo "this is env at workflow level: ${{APP_NAME}}"
                 echo "this is env at job level: ${{ENVIRONMENT}}"
                 echo "this is env at step level: ${{VERSION}}"
-                
+                echo "Commit SHA: ${{ github.sha }}"
+                echo "Actor: ${{ github.actor }}"
