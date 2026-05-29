@@ -4,7 +4,7 @@ on:
         branches: [main]
 jobs:
     self-hosted:
-        runs-on: self-hosted
+        runs-on: [ self-hosted, my-linux-runner]
 
         steps:
           - name: print hostname
