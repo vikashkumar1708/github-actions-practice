@@ -11,7 +11,7 @@ jobs:
           - id: set-date
             run: echo "date =$(date)" >> $GITHUB_OUTPUT
     read-output:
-        runs-on: ubunutu-latest
+        runs-on: ubuntu-latest
         needs: set-output
         steps:
             - name: reads the output
